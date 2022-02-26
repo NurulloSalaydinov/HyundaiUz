@@ -1,0 +1,600 @@
+:root {
+    --color-hyundai-blue: #003B70;
+    --color-hyundai-light-blue: #10B5DC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* sidebar top */
+
+.sidebar-top {
+    width: 100%;
+    height: 45px;
+    position: relative;
+    background: #F6F3F2;
+}
+
+.sidebar-dropdown-opener {
+    z-index: 111111111111;
+}
+
+.number-with-email .dropdown-for-number {
+    top: -300%;
+    width: 355px;
+    z-index: 1111;
+    padding: 12px 20px;
+    position: absolute;
+    transition: all 0.5s;
+    background: var(--color-hyundai-blue);
+}
+
+.number-with-email .dropdown-sidebar-active {
+    top: 0;
+}
+
+.right-extra-links {
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+.right-extra-links .link-box {
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: inline-block;
+    background: #E4DCD3;
+}
+
+.right-extra-links .link-box:hover {
+    background: transparent;
+}
+
+.right-extra-links .user-cabinet {
+    color: #fff;
+    background: var(--color-hyundai-blue);
+}
+
+.right-extra-links .user-cabinet:hover {
+    opacity: 0.5;
+    background: var(--color-hyundai-blue);
+}
+
+/* normalize for sidebar top */
+
+@media (max-width: 1200px) {
+    .sidebar-top {
+        display: none;
+    }
+}
+
+/* end sidebar top */
+
+/* navbar */
+
+.navbar-header {
+    width: 100%;
+    height: 60px;
+    margin-bottom: 0;
+    overflow: hidden;
+    background: #fff;
+}
+
+.navbar-header-fixed {
+    top: 0;
+    z-index: 1111;
+    position: fixed;
+    transition: all 1s;
+    animation-name: navbar;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+
+.logo-header-navbar img {
+    padding: 20px 0;
+    max-width: 130px;
+    display: inline-block;
+}
+
+.navbar-header-links {
+    float: right;
+    margin-top: 10px;
+}
+
+.navbar-header-links ul li {
+    cursor: pointer;
+    list-style: none;
+    padding-top: 10px;
+    margin-left: 15px;
+    display: inline-block;
+}
+
+.navbar-header ul li p {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-header ul li p:hover {
+    color: var(--color-hyundai-blue);
+    text-decoration: none;
+}
+
+.navbar-header ul li p .animation-icon {
+    transition: all 0.5s;
+    transform: rotate(0deg);
+}
+
+.navbar-header ul li p .animation-active {
+    transform: rotate(180deg);
+}
+
+.navbar-header ul .header-link a {
+    color: #666;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar-header ul .header-link a:hover {
+    color: var(--color-hyundai-blue);
+    text-decoration: none;
+}
+
+
+.navbar-header-links ul li .showroom-models {
+    left: 0;
+    top: 105px;
+    width: 100%;
+    height: 0;
+    overflow: auto;
+    position: fixed;
+    background: #fff;
+    transition: all 0.5s;
+    z-index: 11111111111111110656;
+}
+
+.navbar-header-links ul li .showroom-active {
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.navbar-header-links ul li .showroom-scrolled {
+    top: 60px;
+}
+
+
+.showroom-models .banner-showroom {
+    width: 100%;
+    height: auto;
+    color: #fff;
+    text-decoration: none;
+}
+
+.showroom-models .banner-showroom .banner {
+    padding: 18px 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(../image/showroom_bg.jpeg);
+}
+
+.navbar-header ul .mobile-visible {
+    display: none;
+}
+
+.navbar-header .toggle {
+    top: -5px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+    display: none;
+    z-index: 11111;
+    cursor: pointer;
+    overflow: hidden;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-header .toggle span {
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background: var(--color-hyundai-blue);
+    border-radius: 4px;
+    transition: all 0.5s;
+    transition-delay: 0.25s;
+}
+
+.navbar-header .toggle span:nth-child(1) {
+    transform: translateY(-8px);
+    width: 25px;
+    left: 15px;
+}
+
+.navbar-header .toggle.active span:nth-child(1) {
+    width: 40px;
+    transform: translateY(0) rotate(45deg);
+}
+
+.navbar-header .toggle span:nth-child(2) {
+    transform: translateY(8px);
+    width: 15px;
+    left: 15px;
+}
+
+.navbar-header .toggle.active span:nth-child(2) {
+    width: 40px;
+    transform: translateY(0) rotate(315deg);
+}
+
+.navbar-header .toggle.active span:nth-child(3) {
+    transform: translateX(60px)
+}
+
+/* normalaize navbar */
+
+
+@media (max-width: 768px) {
+    .navbar-header .container {
+        width: 100%;
+        margin: 0;
+    }
+    .navbar-header-links {
+        top: 50px;
+        left: 0;
+        width: 100%;
+        height: 0;
+        display: flex;
+        transition: all 1s;
+        justify-content: center;
+        overflow: hidden;
+        position: fixed;
+        z-index: 11111111111111;
+        background: rgba(255, 255, 255, 1);
+    }
+    .navbar-header-links ul li {
+        display: block;
+        margin-right: 100px;
+    }
+    .navbar-header ul li {
+        padding: 15px 0;
+        /* letter-spacing: 5px; */
+        border-bottom: 1px solid #d1d1d1;
+    }
+    .navbar-header ul li:first-child {
+        padding-bottom: 0;
+    }
+    .navbar-header ul .mobile-visible {
+        display: block;
+    }
+    .navbar-header-links ul li .showroom-models {
+        margin-top: 10px;
+        left: 0;
+        width: 99%;
+    }
+    .navbar-header .toggle {
+        display: flex;
+    }
+    .mobile-nav-active {
+        height: 100%;
+    }
+}
+
+@media (max-width: 438px) {
+    .navbar-header-links {
+        align-items: left;
+        justify-content: left;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar-header-links ul li .showroom-models {
+        top: 60px;
+    }
+}
+
+/* endnavbar */
+
+/* banner-header */
+
+.banner-header-slider {
+    width: 100%;
+    height: auto;
+}
+
+.swiper-slide {
+    width: 1600px;
+}
+
+/* helpers used in html */
+
+.font-sans {
+    font-family: sans-serif;
+}
+
+.font-sans-bold {
+    font-weight: 600;
+}
+
+.text-decoration-none {
+    text-decoration: none;
+}
+
+.hyundai-color {
+    color: #003B70
+}
+
+.is-clickable {
+    cursor: pointer;
+}
+
+.btn-bg-hyundai {
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 30px;
+    background: var(--color-hyundai-light-blue);
+}
+
+.btn-bg-hyundai-dark {
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 30px;
+    background: var(--color-hyundai-blue);
+}
+
+.btn-bg-hyundai-dark-large {
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 12px 70px;
+    background: var(--color-hyundai-blue);
+}
+
+::-webkit-scrollbar {
+    width: 0.55rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #555;
+    border-radius: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: #fff;
+}
+
+/* custom swiper styles */
+
+.mySwiper .swiper {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.mySwiper .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.mySwiper .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--color-hyundai-blue);
+}
+
+.mySwiper .swiper-button-prev {
+    opacity: 0.8;
+    padding: 35px;
+    background: #000;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.mySwiper .swiper-button-prev:hover {
+    opacity: 1;
+    background: var(--color-hyundai-light-blue);
+}
+
+.mySwiper .swiper-button-prev::after {
+    color: #fff;
+}
+
+.mySwiper .swiper-button-next {
+    opacity: 0.8;
+    padding: 35px;
+    background: #000;
+    border-radius: 50%;
+    transition: all 1s;
+}
+
+.mySwiper .swiper-button-next:hover {
+    opacity: 1;
+    background: var(--color-hyundai-light-blue);
+}
+
+.mySwiper .swiper-button-next::after {
+    color: #fff;
+}
+
+.mySwiper .swiper-slide-visible .swiper-text-content {
+    top: 100px;
+    left: 50px;
+    max-width: 70%;
+    position: absolute;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+
+.mySwiper .swiper-slide .swiper-text-content h1 {
+    font-weight: 900;
+}
+
+.mySwiper .swiper-slide .swiper-text-content .button-slider {
+    position: absolute;
+    top: 350px;
+}
+
+.mySwiper .swiper-slide .swiper-text-content .line-cross {
+    width: 350px;
+    height: 3px;
+    bottom: -200px;
+    border-radius: 3px;
+    background: #fff;
+    position: absolute;
+}
+
+/* normalaize */
+
+@media (max-width: 468px) {
+    .mySwiper .swiper-slide .swiper-text-content .line-cross {
+        width: 100%;
+        bottom: -120px;
+    }
+}
+
+
+
+/* main content start */
+
+.main-content {
+    width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
+
+/* car swiper custom styles */
+
+.carSwiper {
+    height: auto;
+    padding-top: 150px;
+}
+
+.carSwiper .swiper-wrapper .swiper-slide {
+    z-index: -11;
+}
+
+.carSwiper .swiper-pagination {
+    top: 0;
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+}
+
+.carSwiper .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 100px;
+    height: auto;
+    font-size: 15px;
+    background: #fff;
+    border-radius: 0;
+}
+
+.carSwiper .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    color: var(--color-hyundai-blue);
+    border-bottom: 2px solid var(--color-hyundai-blue);
+}
+
+.carSwiper .swiper-button-prev {
+    z-index: 11111111;
+}
+
+.carSwiper .swiper-button-next {
+    z-index: 11111111;
+}
+
+.carSwiper .swiper-slide-active .fadeUpFirst {
+    animation-name: fadeInUp;
+    animation-duration: 0.3s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.carSwiper .swiper-slide-active .fadeUpSecond {
+    animation-name: fadeInUp;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.carSwiper .swiper-slide-active .fadeUpThird {
+    animation-name: fadeInUp;
+    animation-duration: 0.7s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+.carSwiper .swiper-slide-active .fadeUpFourth {
+    animation-name: fadeInUp;
+    animation-duration: 0.8s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+
+@media (max-width: 768px) {
+    .carSwiper .swiper-pagination .swiper-pagination-bullet {
+        width: auto;
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 428px) {
+    .carSwiper .swiper-pagination .swiper-pagination-bullet {
+        width: auto;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 372px) {
+    .carSwiper .swiper-pagination .swiper-pagination-bullet {
+        font-size: 7px;
+    }
+}
+
+
+/* keyframes */
+
+
+@keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(20px);
+      -ms-transform: translateY(20px);
+      transform: translateY(20px);
+    }
+  
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
+}
+
+@keyframes navbar {
+    0% {
+        height: 0;
+    }
+    100% {
+        height: 60px;
+    }
+}

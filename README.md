@@ -1,2 +1,0 @@
-# HyundaiUz
-Hyundai Uz Frontend

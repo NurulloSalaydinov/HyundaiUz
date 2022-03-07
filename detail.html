@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nurullo Salaydinov">
+    <title>Hyundai Uz</title>
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="css/font/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/55f20efebd.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/detail.css">
+    <!-- css swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <!-- sidebar -->
+        <div class="sidebar-top">
+            <div class="container">
+                <div class="number-with-email">
+                    <p class="hyundai-color text-decoration-none pt-2">
+                        <a href="tel:+998979890919" class="hyundai-color text-decoration-none">
+                            97-989-09-19
+                        </a>
+                        <i class="fa-solid fa-chevron-circle-down is-clickable sidebar-dropdown-opener"
+                            onclick="this.parentElement.parentElement.querySelector('.dropdown-for-number').classList.add('dropdown-sidebar-active')"></i>
+                    </p>
+                    <div class="dropdown-for-number text-light">
+                        <span>Mijozlarni qo'llab-quvvatlash <i class="fa-solid fa-circle-chevron-up is-clickable"
+                                onclick="this.parentElement.parentElement.classList.remove('dropdown-sidebar-active')"></i></span>
+                        <p class="h3 mt-3">
+                            <a href="tel:+998979890919" class="text-light text-decoration-none">97-989-09-19</a>
+                        </p>
+                        <a href="mailto:example@example.com" class="text-light text-decoration-none">
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+                <div class="right-extra-links">
+                    <div class="link-box">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Xizmat uchun ro'yxatdan o'tish
+                        </a>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-map"></i>
+                            Diler qidirish
+                        </a>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-car"></i>
+                            Haydov Testi
+                        </a>
+                    </div>
+                    <div class="link-box user-cabinet">
+                        <a href="#" class="text-light text-decoration-none">
+                            <i class="fa-solid fa-circle-user"></i>
+                            Shaxsiy kabinet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar-header" id="navbar">
+            <div class="container">
+                <a href="/" class="logo-header-navbar">
+                    <img src="image/hyundai-logo.png" alt="">
+                </a>
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navbar-header-links">
+                    <ul>
+                        <li class="has-dropdown">
+                            <p class="font-sans" onclick="showroom_opener(this)">
+                                Tarkib <i class="fa-solid fa-circle-chevron-down animation-icon"></i>
+                            </p>
+                            <div class="showroom-models">
+                                <a href="#" class="banner-showroom">
+                                    <div class="banner">
+                                        <div class="container">
+                                            <h2><b>Onlayn Harid</b></h2>
+                                            <p class="text-light">Yangi Hyundai avtomobilingizni tanlang!</p>
+                                            <br>
+                                            <button class="btn-bg-hyundai">Sotib olish</button>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="container mt-3">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Shahar <i class="fa-solid fa-times"
+                                                    onclick="showroom_opener(this.parentElement.parentElement.parentElement.parentElement.parentElement)"></i>
+                                            </h3>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Solaris</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Elantra</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Sonata</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Shahar</h3>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Solaris</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Elantra</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Sonata</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Online Harid</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Konfigurator</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Mahsus takliflar</a>
+                        </li>
+                        <li class="mobile-visible">
+                            <div class="link-box">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    Xizmat uchun ro'yxatdan o'tish
+                                </a>
+                            </div>
+                        </li>
+                        <li class="mobile-visible">
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="fa-solid fa-map"></i>
+                                Diler qidirish
+                            </a>
+                        </li>
+                        <li class="mobile-visible">
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="fa-solid fa-car"></i>
+                                Haydov Testi
+                            </a>
+                        </li>
+                        <li class="mobile-visible">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-circle-user"></i>
+                                Shaxsiy kabinet
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="top-banner-detail">
+        <div class="text-content-header">
+            <h1 class="font-sans font-sans-bold text-light">STARIA Premium biznes transporti</h1>
+            <p class="text-light">O'z biznesingiz.</p>
+        </div>
+        <div class="image-content">
+            <img src="image/hyundai-staria-banner.jpg" class="img-fluid" alt="">
+        </div>
+        <div class="text-content-footer">
+            <a href="#" class="text-decoration-none text-light">
+                Mikroavtobus STARIA
+            </a>
+            <a href="#" class="text-light">
+                STARIA Premium biznes transporti
+            </a>
+        </div>
+    </div>
+
+    <div class="main-navbar">
+        <ul>
+            <li>
+                <a href="#design">Dizayn</a>
+            </li>
+            <li>
+                <a href="#dynamics">Dynamiklar</a>
+            </li>
+            <li>
+                <a href="#safety">Xavfsizlik</a>
+            </li>
+            <li>
+                <a href="#comfort">Qulaylik</a>
+            </li>
+            <li>
+                <a href="#bluelink">Bluelink®</a>
+            </li>
+            <li>
+                <a href="#">Galereya</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="car-3d-slider">
+        <div class="car-title">
+            <h1 class="text-center font-sans font-sans-bold">Stariyangizni tanlang</h1>
+        </div>
+        <div class="car-wrapper container" id="carWrapper">
+            <div class="car-slide-3d active">
+                <img src="image/staria/0.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/1.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/2.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/3.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/4.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/5.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/6.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/7.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/8.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/9.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/10.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/11.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/12.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/13.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/14.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/15.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/16.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/17.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/18.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/19.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/20.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/21.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/22.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/23.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/24.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/25.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/26.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/27.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/28.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/29.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/30.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/31.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/32.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/33.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/34.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/35.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/36.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/37.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/38.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/39.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/40.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/41.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/42.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/43.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/44.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/45.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/46.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/47.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/48.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/49.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/50.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/51.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/52.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/53.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/54.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/55.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/56.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/57.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/58.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/59.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/60.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/61.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/62.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/63.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/64.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/65.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/66.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/67.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/68.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/69.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/70.png" alt="">
+            </div>
+            <div class="car-slide-3d">
+                <img src="image/staria/71.png" alt="">
+            </div>
+
+            <div class="car-next-prev-buttons">
+                <span class="slide-3d-prev">
+                    <i class="fa-solid fa-chevron-left"></i>
+                </span>
+                <span class="slide-3d-next">
+                    <i class="fa-solid fa-chevron-right"></i>
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="car-slide-configuration">
+        <div class="title">
+            <h5 class="font-sans font-sans-bold mb-3">Oq / Kremsi oq (YAC), 0 ₽</h5>
+        </div>
+        <div class="color-conf d-inline">
+
+            <a class="text-decoration-none" href="#">
+                <div class="color-box active" style="background: #E8E7E1;"></div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="color-box" style="background: #494A4E;"></div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="color-box" style="background: #797B7E;"></div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="color-box" style="background: #2F3D59;"></div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="color-box" style="background: #5C635E;"></div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="color-box" style="background: #000000;"></div>
+            </a>
+            <a class="text-decoration-none" href="#">
+                <div class="color-box" style="background: #25190C;"></div>
+            </a>
+        </div>
+
+        <div class="btn-configuration">
+            <button class="btn-conf">Konfiguratsiya yaratmoq</button>
+        </div>
+
+    </div>
+
+    <div id="design" class="design">
+        <div class="design_tag">
+            #Dizayn
+        </div>
+        <div class="design_title">
+            <h1 class="font-sans font-sans-bold">Yangi makonga qadam qo'ying.</h1>
+        </div>
+        <div class="design_banner"></div>
+    </div>
+    <div class="slider pt-5 pb-5 mt-5 mb-5">
+        <div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img class="img-fluid" src="image/slider-image-1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-slider swiper">
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center position-relative container">
+                                    <a href="#" class="mt-5 text-decoration-none text-light position-relative">
+                                        <img src="image/slider_1_1.jpg" style="max-height: 400px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-content mt-3 d-flex align-items-center justify-content-center">
+                                    <p>Hyundai Proyeksiya turidagi LED faralar</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center position-relative container">
+                                    <a href="#" class="mt-5 text-decoration-none text-light position-relative">
+                                        <img src="image/slider_1_1.jpg" style="max-height: 400px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-content mt-3 d-flex align-items-center justify-content-center">
+                                    <p>Hyundai Proyeksiya turidagi LED faralar</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="design-character mt-5 mb-5">
+        <div class="container">
+            <div class="design-character-title mb-5 ml-3">
+                <h1 class="font-sans font-sans-bold">Dizayn xususiyatlari.</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <img src="image/design_img_1.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Birinchi qatorning ikki marta laminatlangan oynasi</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-md-6">
+                    <img src="image/design_img_2.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Kontur ichki yoritish (64 rang)</h3>
+                    </div>
+                </div>
+
+                <div class="col-12 mt-5">
+                    <img src="image/design_img_3.jpg" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-3 mt-3">
+                    <h3>4 ichki rang</h3>
+                </div>
+                <div class="col-md-4"></div>
+                
+                <div class="col-md-5 mt-3">
+                    <div class="image-category-design">
+                        
+                        <div class="image-category d-inline-block">
+                            <img src="image/design_img_4.jpg" alt="">
+                            <div class="divider-active"></div>
+                        </div>
+                        <div class="image-category d-inline-block">
+                            <img src="image/design_img_5.jpg" alt="">
+                        </div>
+                        <div class="image-category d-inline-block">
+                            <img src="image/design_img_6.jpg" alt="">
+                        </div>
+                        <div class="image-category d-inline-block">
+                            <img src="image/design_img_7.jpg" alt="">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-6 mt-5">
+                    <img src="image/design_img_8.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Surma oyna</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-md-4 mt-5">
+                    <img src="image/design_img_9.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Ikki qismli panoramali tom</h3>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <img src="image/design_img_10.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Delikli charm rul</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-md-6 mt-5">
+                    <img src="image/design_img_11.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Panoramik oynalar</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="dynamics" class="dynamics mt-5">
+        <div class="dynamic-container">
+            <div class="dynamics_tag">
+                #Dinamikalar
+            </div>
+            <div class="dynamics_title">
+                <h1 class="font-sans font-sans-bold">Kuchliroq, xavfsizroq, ishonchliroq.</h1>
+            </div>
+        </div>
+        <div class="dynamics_banner"></div>
+    </div>
+    
+    <footer class="footer" role="contentinfo">
+        <div class="footer__top container">
+            <nav role="navigation" class="row">
+                <div class="col-md-12">
+                    <ul class="footer__nav">
+                        <li class="footer__column footer__column--logo">
+                            <a class="footer__main-link" role="button" href="/">
+                                <img src="image/single-logo.png" class="single-logo" alt="">
+                            </a>
+                        </li>
+                        <li class="footer__column">
+                            <h5 class="footer__title">Matbuot markazi</h5>
+                            <ul class="footer__sub-nav">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Yangiliklar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__column">
+                            <h5 class="footer__title">Xizmat</h5>
+                            <ul class="footer__sub-nav">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Xizmat reklamalari</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Kafolat</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Xizmat</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Xizmat uchun ro'yxatdan o'tish</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Texnik xizmat ko'rsatish kalkulyatori</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__column">
+                            <h5 class="footer__title">Xaridor</h5>
+                            <ul class="footer__sub-nav">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Konfigurator</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Hyundai-ni qayerdan sotib olish mumkin?</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Test Haydov</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Korporativ mijozlar</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__column">
+                            <h5 class="footer__title">Hyundai haqida</h5>
+                            <ul class="footer__sub-nav">
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Brend tarixi</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Falsafa</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">XMMP zavodi</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Matbuot markazi</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link vacancy__link">Ishlar</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Mijozlar uchun xizmatlar</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a href="#" class="footer__link">Dilerga aylaning</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="footer__column footer__column--last">
+                            <h5 class="footer__support">Mijozlarni qo'llab-quvvatlash <a class="footer__phone"
+                                    href="tel:998998990959">998998990959</a></h5>
+                            <a class="footer__mail" href="#">
+                                <i class="fa-solid fa-envelope ml--3"></i>
+                                Email
+                            </a>
+                            <noindex>
+                                <ul class="footer-social">
+                                    <li class="footer-social__item">
+                                        <a href="#" target="_blank" class="footer-social__link footer-social__link--fb"
+                                            role="button" aria-label="facebook">
+                                            <i class="fa-brands fa-facebook-square"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social__item">
+                                        <a href="https://vk.com/HyundaiRussia" rel="nofollow" target="_blank"
+                                            class="footer-social__link footer-social__link--vk" role="button"
+                                            aria-label="вконтакте">
+                                            <i class="fa-brands fa-vk"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social__item">
+                                        <a href="https://twitter.com/HyundaiRussia" rel="nofollow" target="_blank"
+                                            class="footer-social__link footer-social__link--twitter" role="button"
+                                            aria-label="twitter">
+                                            <i class="fa-brands fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social__item">
+                                        <a href="http://instagram.com/HyundaiRussia" rel="nofollow" target="_blank"
+                                            class="footer-social__link footer-social__link--instagram" role="button"
+                                            aria-label="instagram">
+                                            <i class="fa-brands fa-instagram"></i>
+                                        </a>
+                                    </li>
+                                    <li class="footer-social__item">
+                                        <a href="http://www.youtube.com/hyundairussia" rel="nofollow" target="_blank"
+                                            class="footer-social__link footer-social__link--youtube" role="button"
+                                            aria-label="youtube">
+                                            <i class="fa-brands fa-youtube"></i>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </noindex>
+                            <a href="https://www.hyundai.com/worldwide/" target="_blank"
+                                class="footer__ww text-light is-small">
+                                <i class="fa-solid fa-earth-asia"></i>
+                                <span>Hyundai butun dunyo bo'ylab</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-bottom__top-line col-md-12">
+                        <a href="#" target="_blank" class="footer-bottom__world text-decoration-none text-light">
+                            <svg style="width: 58px;margin-right: 10px" xmlns="http://www.w3.org/2000/svg"
+                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250">
+                                <path fill="#1eb53a" d="M0 0h500v250H0z" />
+                                <path fill="#0099b5" d="M0 0h500v125H0z" />
+                                <path fill="#ce1126" d="M0 80h500v90H0z" />
+                                <path fill="#fff" d="M0 85h500v80H0z" />
+                                <circle cx="70" cy="40" r="30" fill="#fff" />
+                                <circle cx="80" cy="40" r="30" fill="#0099b5" />
+                                <g fill="#fff" transform="translate(136 64)">
+                                    <g id="e">
+                                        <g id="d">
+                                            <g id="c">
+                                                <g id="b">
+                                                    <path id="a" d="M0-6v6h3" transform="rotate(18 0 -6)" />
+                                                    <use xlink:href="#a" transform="scale(-1 1)" />
+                                                </g>
+                                                <use xlink:href="#b" transform="rotate(72)" />
+                                            </g>
+                                            <use xlink:href="#b" transform="rotate(-72)" />
+                                            <use xlink:href="#c" transform="rotate(144)" />
+                                        </g>
+                                        <use xlink:href="#d" y="-24" />
+                                        <use xlink:href="#d" y="-48" />
+                                    </g>
+                                    <use xlink:href="#e" x="24" />
+                                    <use xlink:href="#e" x="48" />
+                                    <use xlink:href="#d" x="-48" />
+                                    <use xlink:href="#d" x="-24" />
+                                    <use xlink:href="#d" x="-24" y="-24" />
+                                </g>
+                            </svg>
+                            Uzbekistan
+                        </a>
+                        <nav class="footer-bottom__nav" role="navigation">
+                            <ul class="footer-bottom__menu">
+                                <li class="footer-bottom__item">
+                                    <a href="#" class="footer-bottom__link">
+                                        Sayt xaritasi
+                                    </a>
+                                </li>
+                                <li class="footer-bottom__item">
+                                    <a href="#" class="footer-bottom__link">
+                                        Shaxsiy ma'lumotlarni qayta ishlash siyosati
+                                    </a>
+                                </li>
+                                <li class="footer-bottom__item">
+                                    <a href="#" class="footer-bottom__link">
+                                        Maxfiylik
+                                    </a>
+                                </li>
+                                <li class="footer-bottom__item">
+                                    <a href="#" class="footer-bottom__link">
+                                        Mualliflik huquqi
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+                <div class="row">
+                    <noindex>
+                        <div class="footer-bottom__disclamer col-md-12">
+                            Saytda avtoulovlar va xizmat ko'rsatish bo'yicha taqdim etilgan barcha ma'lumotlar ma'lumot
+                            olish uchun mo'ljallangan va San'at qoidalari bilan belgilanadigan ommaviy oferta emas.
+                            Rossiya Federatsiyasi Fuqarolik Kodeksining 437 (2). Ushbu saytda ko'rsatilgan barcha
+                            narxlar ma'lumot olish uchun mo'ljallangan va distribyutorning hisob-kitoblariga ko'ra
+                            (Hyundai Motor CIS MChJ) tavsiya etilgan maksimal chakana narxlardir. Qo'shimcha ma'lumot
+                            olish uchun Hyundai Motor CIS MChJning eng yaqin rasmiy dileriga murojaat qiling. Ushbu
+                            saytda chop etilgan ma'lumotlar istalgan vaqtda oldindan ogohlantirmasdan o'zgartirilishi
+                            mumkin.
+                        </div>
+                    </noindex>
+                </div>
+                <div class="row">
+                    <div class="footer-bottom__copyright col-md-12">
+                        2022 © MChJ "Hyundai Motor CIS"
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <!-- swiper js -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- aos script -->
+    <script src="js/aos.js"></script>
+    <!-- custom script -->
+    <script src="js/detail.js"></script>
+</body>
+
+</html>

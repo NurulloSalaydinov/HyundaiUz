@@ -1,0 +1,113 @@
+main {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+    background: #f8f8f8;
+    justify-content: center;
+}
+
+main .register-card {
+    width: 75em;
+    height: auto;
+    padding: 60px 120px;
+    background: #fff;
+}
+
+.register-card form .input-form {
+    position: relative;
+}
+
+.register-card form .input-form input {
+    width: 100%;
+    /* height: 60px; */
+    outline: none;
+    margin: 12px 0;
+    font-size: 14px;
+    min-height: 3.8em;
+    text-indent: 10px;
+    transition: all 0.3s;
+    border: 1px solid #f8f8f8;
+}
+
+.register-card form .input-form input:hover {
+    border: 1px solid #000;
+}
+
+.register-card form .input_label {
+    top: 25px;
+    left: 10px;
+    z-index: 111;
+    background: #fff;
+    position: absolute;
+    transition: all 0.5s;
+}
+
+.register-card form .active-label {
+    top: 13px;
+    left: 10px;
+    z-index: 111;
+    font-size: 12px;
+    background: #fff;
+    position: absolute;
+}
+
+.register-card form .clicked-active-label {
+    top: 13px;
+    left: 10px;
+    z-index: 111;
+    font-size: 12px;
+    background: #fff;
+    position: absolute;
+}
+
+.btn-hyundai-submit {
+    background: var(--color-hyundai-blue);
+    color: #fff;
+    width: 100%;
+    padding: 16px 0;
+    border: none;
+    outline: none;
+    position: relative;
+    cursor: pointer;
+}
+
+.btn-animate {
+    position: relative;
+}
+
+.btn-animate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #002c5f;
+    transition: all 0.5s;
+    transform-origin: 0 0;
+    transform: scaleX(0)
+}
+
+.btn-animate {
+    z-index: 1;
+}
+
+.btn-animate:hover::before {
+    transform: scaleX(1);
+}
+
+
+
+
+
+@media (max-width: 767px) {
+    main .register-card {
+        padding: 60px 40px;
+    }
+}
+

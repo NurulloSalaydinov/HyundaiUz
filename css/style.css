@@ -339,9 +339,13 @@ body {
 
 .mySwiper .swiper {
     width: 100%;
-    height: 100%;
+    height: auto;
     overflow: hidden;
     background: #000;
+}
+
+.mySwiper .swiper-pagination {
+    top: 80%;
 }
 
 .mySwiper .swiper-pagination .swiper-pagination-bullet {
@@ -412,7 +416,8 @@ body {
 
 .mySwiper .swiper-slide .swiper-text-content .button-slider {
     position: absolute;
-    top: 350px;
+    top: 330px;
+    padding: 12px 100px;
 }
 
 .mySwiper .swiper-slide .swiper-text-content .line-cross {
@@ -440,7 +445,7 @@ body {
 .main-content {
     width: 100%;
     height: auto;
-    padding-top: 20px;
+    
 }
 
 /* car swiper custom styles */
@@ -478,10 +483,12 @@ body {
 
 .carSwiper .swiper-button-prev {
     z-index: 11111111;
+    left: 100px;
 }
 
 .carSwiper .swiper-button-next {
     z-index: 11111111;
+    right: 100px;
 }
 
 .carSwiper .swiper-slide-active .fadeUpFirst {

@@ -80,6 +80,10 @@ body {
     color: #007bff;
 }
 
+.main-navbar ul li .active {
+    color: #007bff;
+}
+
 .main-navbar-fixed {
     top: 0;
     left: 0;
@@ -233,8 +237,8 @@ body {
 .main {
     width: 100%;
     height: auto;
-    padding: 64px 32px 64px 32px;
     background: #e4dcd3;
+    padding: 64px 32px 64px 32px;
 }
 
 .main .main_tag {

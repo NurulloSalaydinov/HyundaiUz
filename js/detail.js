@@ -213,3 +213,60 @@ comfort_image_changer.forEach(e => {
 
 // body scrolling
 
+let design = document.querySelector('#design');
+let dynamic = document.querySelector('#dynamics');
+let safety = document.querySelector('#safety');
+let comfort = document.querySelector('#comfort');
+let bluelink = document.querySelector('#bluelink');
+// navs
+let design_nav = document.querySelector('#design_nav');
+let dynamic_nav = document.querySelector('#dynamic_nav');
+let safety_nav = document.querySelector('#safety_nav');
+let comfort_nav = document.querySelector('#comfort_nav');
+let bluelink_nav = document.querySelector('#bluelink_nav');
+
+
+document.addEventListener('scroll', (e) => {
+    let win = window.pageYOffset
+    let des = design.offsetTop
+    
+    let dyn = dynamic.offsetTop
+    
+    let saf = safety.offsetTop
+    
+    let com = comfort.offsetTop
+
+    let blue = bluelink.offsetTop
+
+    if (win > des && win < dyn) {
+        design_nav.classList.add('active')
+    }
+    else {
+        design_nav.classList.remove('active');
+    }
+    if (win > dyn && win < saf) {
+        dynamic_nav.classList.add('active');
+    }
+    else {
+        dynamic_nav.classList.remove('active');
+    }
+    if (win > saf && win < com) {
+        safety_nav.classList.add('active');
+    }
+    else {
+        safety_nav.classList.remove('active');
+    }
+    if (win > com && win < blue) {
+        comfort_nav.classList.add('active');
+    }
+    else {
+        comfort_nav.classList.remove('active');
+    }
+    if (win > blue) {
+        bluelink_nav.classList.add('active')
+    }
+    else {
+        bluelink_nav.classList.remove('active');
+    }
+
+});

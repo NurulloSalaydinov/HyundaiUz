@@ -1334,3 +1334,17 @@ body {
 .flex-direction-column {
     flex-direction: column !important;
 }
+
+.float-right {
+    float: right;
+}
+
+.mt--5 {
+    margin-top: -150px;
+}
+
+@media (max-width: 768px) {
+    .float-right {
+        float: none;
+    }
+}

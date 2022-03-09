@@ -54,11 +54,6 @@ body {
     }
 }
 
-img {
-  cursor: grab;
-  pointer-events: grab;
-}
-
 .main-navbar {
     width: 200%;
     height: 50px;
@@ -235,28 +230,28 @@ img {
 
 /* #design */
 
-.design {
+.main {
     width: 100%;
     height: auto;
     padding: 64px 32px 64px 32px;
     background: #e4dcd3;
 }
 
-.design .design_tag {
+.main .main_tag {
     font-size: 16px;
     font-weight: 500;
     line-height: 20px;
     border-bottom: 1px solid #000000;
 }
 
-.design .design_title {
+.main .main_title {
     font-size: 56px;
     font-weight: 500;
     line-height: 64px;
     padding: 20px 0 48px 0;
 }
 
-.design .design_banner {
+.main .main_banner {
     width: 100%;
     height: 848px;
     max-height: 848px;
@@ -325,11 +320,132 @@ img {
     transform: scale(1.25);
 }
 
-.image-category-design {
+/* slider for safety */
+
+.detail-slider-safety .swiper-pagination {
+    bottom: -100px;
+    position: relative;
+}
+
+.detail-slider-safety .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    background: #666;
+    border-radius: 10px;
+}
+
+.detail-slider-safety .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--color-hyundai-blue);
+}
+
+.detail-slider-safety .swiper-button-prev {
+    padding: 20px;
+    color: #000;
+    border-radius: 50%;
+    transition: all 0.3s;
+    background: #FFFFFF;
+    border: 1px solid #CFCBC6;
+    /* left: 100px; */
+}
+
+.detail-slider-safety .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.detail-slider-safety .swiper-button-prev:hover {
+    transform: scale(1.25);
+}
+
+.detail-slider-safety .swiper-button-next {
+    padding: 20px;
+    color: #000;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transition: all 0.3s;
+    border: 1px solid #CFCBC6;
+    /* left: 100px; */
+}
+
+.detail-slider-safety .swiper-button-next:after {
+    font-size: 20px;
+}
+
+.detail-slider-safety .swiper-button-next:hover {
+    transform: scale(1.25);
+}
+
+/* slider for comfort */
+
+.detail-slider-comfort .swiper-pagination {
+    bottom: -100px;
+    position: relative;
+}
+
+.detail-slider-comfort .swiper-pagination .swiper-pagination-bullet {
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    background: #666;
+    border-radius: 10px;
+}
+
+.detail-slider-comfort .swiper-pagination .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 50px;
+    height: 5px;
+    border-radius: 10px;
+    background: var(--color-hyundai-blue);
+}
+
+.detail-slider-comfort .swiper-button-prev {
+    padding: 20px;
+    color: #000;
+    border-radius: 50%;
+    transition: all 0.3s;
+    background: #FFFFFF;
+    border: 1px solid #CFCBC6;
+    /* left: 100px; */
+}
+
+.detail-slider-comfort .swiper-button-prev:after {
+    font-size: 20px;
+}
+
+.detail-slider-comfort .swiper-button-prev:hover {
+    transform: scale(1.25);
+}
+
+.detail-slider-comfort .swiper-button-next {
+    padding: 20px;
+    color: #000;
+    border-radius: 50%;
+    background: #FFFFFF;
+    transition: all 0.3s;
+    border: 1px solid #CFCBC6;
+    /* left: 100px; */
+}
+
+.detail-slider-comfort .swiper-button-next:after {
+    font-size: 20px;
+}
+
+.detail-slider-comfort .swiper-button-next:hover {
+    transform: scale(1.25);
+}
+
+
+
+.image-category-main {
     float: right;
 }
 
 .image-category {
+    margin: 6px;
     position: relative;
 }
 
@@ -342,7 +458,7 @@ img {
 }
 
 @media (max-width: 767px) {
-    .image-category-design {
+    .image-category-main {
         float: none;
     }
     .image-category img {
@@ -378,10 +494,128 @@ img {
 
 .dynamics .dynamics_banner {
     width: 100%;
-    height: 848px;
-    max-height: 848px;
+    height: 1000px;
     background-size: cover;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-image: url(../image/dynamic_banner.jpeg);
 }
+
+.dynamics_main_character {
+    width: 100%;
+    height: auto;
+}
+
+.row-reverse {
+    flex-wrap: wrap-reverse;
+}
+
+.dynamics_main_character .first_section {
+    padding: 50px 32px;
+    background: #F6F3F2;
+}
+
+.dynamics_main_character .first_section .bottom-info-tab {
+    display: none;
+    margin-top: 200px;
+}
+
+.dynamics_main_character .first_section .active-info-tab {
+    display: block;
+}
+
+.dynamics_main_character .first_section .bottom-info-tab ul li {
+    list-style: none;
+    position: relative;
+    padding: 16px 0 16px 0;
+    border-top: 0.5px solid #999;
+    margin-left: -30px;
+}
+
+.dynamics_main_character .first_section .bottom-info-tab ul li:nth-child(3) {
+    border-bottom: 0.5px solid #999;
+}
+
+.dynamics_main_character .first_section .bottom-info-tab ul li h5 {
+    font-weight: bold;
+}
+
+.dynamics_main_character .first_section .bottom-info-tab ul li div {
+    top: 16px;
+    right: 0;
+    position: absolute;
+}
+
+.dynamics_main_character .second_section {
+    height: auto;
+    background: #E4DCD3;
+}
+
+.dynamics_main_character .second_section .central-image {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dynamics_main_character .second_section .central-image img {
+    width: 100%
+}
+
+.dynamics_main_character .second_section .bottom-controls {
+    width: 100%;
+    height: 60px;
+    overflow: auto;
+    position: relative;
+}
+
+.dynamics_main_character .second_section .bottom-controls button {
+    width: auto;
+    border: none;
+    outline: none;
+    color: #999;
+    margin: 6px 12px;
+    padding: 8px 12px;
+    border: 1px solid #999;
+    background: transparent;
+}
+
+.dynamics_main_character .second_section .bottom-controls button:focus {
+    color: #000;
+    border: 1px solid #000;
+}
+
+/* normalize */
+
+@media (max-width: 768px) {
+    .dynamics_main_character .second_section .central-image {
+        height: 80%;
+    }
+    .dynamics_main_character .first_section {
+        padding-top: 50px;
+    }
+    .dynamics_main_character .first_section {
+        background: #E4DCD3;
+    }
+    .dynamics_main_character .first_section .bottom-info-tab {
+        margin-top: 0;
+    }
+    .dynamics_main_character .second_section .bottom-controls button:first-child {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 889px) {
+    .dynamics_main_character .first_section .bottom-info-tab ul li div {
+        font-size: small;
+    }
+}
+
+@media (max-width: 395px) {
+    .dynamics_main_character .first_section .bottom-info-tab ul li div {
+        top: 40px;
+        font-size: x-small;
+    }
+}
+

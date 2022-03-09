@@ -41,6 +41,7 @@ function showroom_opener(e) {
     e.parentElement.querySelector('.animation-icon').classList.toggle('animation-active');
 }
 
+// add your own car title from backend
 var menu = ['TUCSON', 'SOLARIS', 'ELANTRA', 'SONATA', 'STARIA']
 
 const mySwiper = new Swiper('.mySwiper', {

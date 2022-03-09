@@ -1330,3 +1330,7 @@ body {
 .is-small {
     font-size: 16px;
 }
+
+.flex-direction-column {
+    flex-direction: column !important;
+}

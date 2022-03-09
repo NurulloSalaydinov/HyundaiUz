@@ -3,6 +3,17 @@ let carWrapper = document.querySelector('#carWrapper');
 let sliders = carWrapper.querySelectorAll('.car-slide-3d');
 let prev = document.querySelector('.slide-3d-prev');
 let next = document.querySelector('.slide-3d-next');
+let button_tab = document.querySelectorAll('.btn-tab-opener');
+let tab_content = document.querySelectorAll('.tab-content');
+let safety_images = document.querySelectorAll('.safety-image');
+let safety_image_changer = document.querySelectorAll('.safety-image-changer');
+let safety_divider = document.querySelectorAll('.divider-safety');
+let design_images = document.querySelectorAll('.design-image');
+let design_image_changer = document.querySelectorAll('.design-image-changer');
+let design_divider = document.querySelectorAll('.divider-design');
+let comfort_images = document.querySelectorAll('.comfort-image');
+let comfort_image_changer = document.querySelectorAll('.comfort-image-changer');
+let comfort_divider = document.querySelectorAll('.divider-comfort');
 let index = 0;
 
 window.addEventListener('scroll', () => {
@@ -48,35 +59,6 @@ function NextPrev(direction) {
 
 }
 
-// function NextPrevTransition(direction) {
-//     if (direction === 'next') {
-//         setTimeout(function () {
-//             index++;
-//             if (index == sliders.length) {
-//                 index = 0
-//             }
-//         }, 100)
-//     }
-//     else if (direction === 'prev') {
-//         setTimeout(function () {
-//             if (index == 0) {
-//                 index = sliders.length - 1
-//             }
-//             else {
-//                 index--;
-//             }
-//         }, 100)
-//     }
-
-//     for (let i = 0; i < sliders.length; i++) {
-//         sliders[i].classList.remove('active');
-        
-//     }
-
-//     sliders[index].classList.add('active');
-
-// }
-
 slide3d_arr = []
 
 carWrapper.addEventListener('drag', (e) => {
@@ -120,4 +102,114 @@ const detail_slider = new Swiper('.detail-slider', {
         prevEl: '.swiper-button-prev',
     },
 }).mount();
+
+const detail_slider_safety = new Swiper('.detail-slider-safety', {
+    loop: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    autoplay: {
+        delay: 5000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+}).mount();
+
+const detail_slider_comfort = new Swiper('.detail-slider-comfort', {
+    loop: true,
+    slidesPerView: 1,
+    grabCursor: true,
+    autoplay: {
+        delay: 5000,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+}).mount();
+
+button_tab.forEach(e => {
+    e.addEventListener('click', (event) => {
+        tab_content.forEach(tab_e => {
+            if (event.target.attributes['data-bs-target'].nodeValue == tab_e.attributes['id'].nodeValue) {
+                tab_e.classList.add('active-info-tab');
+            }
+            else {
+                tab_e.classList.remove('active-info-tab');
+            }
+        })
+    })
+});
+
+
+
+// for design
+
+design_image_changer.forEach(e => {
+    e.addEventListener('click', (event) => {
+        design_images.forEach(img_e => {
+            if (event.target.attributes['data-bs-target'].nodeValue == img_e.attributes['data-bs-target'].nodeValue) {
+                design_divider.forEach(event_safety => {
+                    event_safety.classList.remove('divider-active');
+                })
+                let active_show = event.target.parentElement.querySelector('div');
+                active_show.classList.add('divider-active')
+                img_e.classList.remove('d-none');
+            }
+            else {
+                img_e.classList.add('d-none');
+            }
+        })
+    })
+});
+
+// for safety
+
+safety_image_changer.forEach(e => {
+    e.addEventListener('click', (event) => {
+        safety_images.forEach(img_e => {
+            if (event.target.attributes['data-bs-target'].nodeValue == img_e.attributes['data-bs-target'].nodeValue) {
+                safety_divider.forEach(event_safety => {
+                    event_safety.classList.remove('divider-active');
+                })
+                let active_show = event.target.parentElement.querySelector('div');
+                active_show.classList.add('divider-active')
+                img_e.classList.remove('d-none');
+            }
+            else {
+                img_e.classList.add('d-none');
+            }
+        })
+    })
+});
+
+// for comfort
+
+comfort_image_changer.forEach(e => {
+    e.addEventListener('click', (event) => {
+        comfort_images.forEach(img_e => {
+            if (event.target.attributes['data-bs-target'].nodeValue == img_e.attributes['data-bs-target'].nodeValue) {
+                comfort_divider.forEach(event_safety => {
+                    event_safety.classList.remove('divider-active');
+                })
+                let active_show = event.target.parentElement.querySelector('div');
+                active_show.classList.add('divider-active')
+                img_e.classList.remove('d-none');
+            }
+            else {
+                img_e.classList.add('d-none');
+            }
+        })
+    })
+});
+
+
+// body scrolling
 

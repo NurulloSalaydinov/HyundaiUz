@@ -503,16 +503,16 @@
 
     </div>
 
-    <div id="design" class="design">
-        <div class="design_tag">
+    <div id="design" class="main">
+        <div class="main_tag">
             #Dizayn
         </div>
-        <div class="design_title">
+        <div class="main_title">
             <h1 class="font-sans font-sans-bold">Yangi makonga qadam qo'ying.</h1>
         </div>
-        <div class="design_banner"></div>
+        <div class="main_banner"></div>
     </div>
-    <div class="slider pt-5 pb-5 mt-5 mb-5">
+    <div class="slider container pt-5 pb-5 mt-5 mb-5">
         <div>
             <div class="row">
                 <div class="col-md-6">
@@ -556,9 +556,9 @@
         </div>
     </div>
 
-    <div class="design-character mt-5 mb-5">
+    <div class="main-character mt-5 mb-5">
         <div class="container">
-            <div class="design-character-title mb-5 ml-3">
+            <div class="main-character-title mb-5 ml-3">
                 <h1 class="font-sans font-sans-bold">Dizayn xususiyatlari.</h1>
             </div>
             <div class="row">
@@ -576,29 +576,56 @@
                     </div>
                 </div>
 
-                <div class="col-12 mt-5">
+                <div data-bs-target="fifth" class="design-image col-12 mt-5">
                     <img src="image/design_img_3.jpg" class="img-fluid" alt="">
                 </div>
-                <div class="col-md-3 mt-3">
+                <div data-bs-target="fifth" class="design-image col-md-3 mt-3">
                     <h3>4 ichki rang</h3>
                 </div>
+                <!-- for differ easily -->
+                <div data-bs-target="six" class="design-image d-none col-12 mt-5">
+                    <img src="image/slider_2_2.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-bs-target="six" class="design-image d-none col-md-3 mt-3">
+                    <h3>4 ichki rang</h3>
+                </div>
+                <!-- for differ easily -->
+                <div data-bs-target="seven" class="design-image d-none col-12 mt-5">
+                    <img src="image/slider_2_3.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-bs-target="seven" class="design-image d-none col-md-3 mt-3">
+                    <h3>4 ichki rang</h3>
+                </div>
+                <!-- for differ easily -->
+                <div data-bs-target="eight" class="design-image d-none col-12 mt-5">
+                    <img src="image/slider_2_4.jpg" class="img-fluid" alt="">
+                </div>
+                <div data-bs-target="eight" class="design-image d-none col-md-3 mt-3">
+                    <h3>4 ichki rang</h3>
+                </div>
+
+
+
                 <div class="col-md-4"></div>
                 
                 <div class="col-md-5 mt-3">
-                    <div class="image-category-design">
+                    <div class="image-category-main">
                         
-                        <div class="image-category d-inline-block">
-                            <img src="image/design_img_4.jpg" alt="">
-                            <div class="divider-active"></div>
+                        <div class="image-category design-image-changer d-inline-block is-clickable">
+                            <img data-bs-target="fifth" src="image/design_img_4.jpg" alt="">
+                            <div class="divider-design divider-active"></div>
                         </div>
-                        <div class="image-category d-inline-block">
-                            <img src="image/design_img_5.jpg" alt="">
+                        <div class="image-category design-image-changer d-inline-block is-clickable">
+                            <img data-bs-target="six" src="image/design_img_5.jpg" alt="">
+                            <div class="divider-design"></div>
                         </div>
-                        <div class="image-category d-inline-block">
-                            <img src="image/design_img_6.jpg" alt="">
+                        <div class="image-category design-image-changer d-inline-block is-clickable">
+                            <img data-bs-target="seven" src="image/design_img_6.jpg" alt="">
+                            <div class="divider-design"></div>
                         </div>
-                        <div class="image-category d-inline-block">
-                            <img src="image/design_img_7.jpg" alt="">
+                        <div class="image-category design-image-changer d-inline-block is-clickable">
+                            <img data-bs-target="eight" src="image/design_img_7.jpg" alt="">
+                            <div class="divider-design"></div>
                         </div>
 
                     </div>
@@ -645,8 +672,373 @@
                 <h1 class="font-sans font-sans-bold">Kuchliroq, xavfsizroq, ishonchliroq.</h1>
             </div>
         </div>
+        <!-- you can enter as style background-image for this banner to give image -->
         <div class="dynamics_banner"></div>
+
+        <div class="dynamics_main_character">
+            <div class="row row-reverse">
+                <div class="col-md-6 first_section">
+                    <div class="container-fluid">
+                        <h2 class="font-sans font-sans-bold">Avtomobilning asosiy xususiyatlari</h2>
+                        <!-- bu yerdagi id tabdi django da s{{object.id}} qilsez boladi
+                            js da shunaqa yozganman
+                        -->
+                        <div class="bottom-info-tab tab-content active-info-tab" id="firstTab">
+                            <ul>
+                                <li>
+                                    <h5 class="d-inline">177 Ot Kuchi</h5>
+                                    <div>
+                                        <p>Maksimal quvvat</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5 class="d-inline">12,4 sekund</h5>
+                                    <div>
+                                        <p>100 km/soatgacha tezlashish</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5 class="d-inline">7,1 L</h5>
+                                    <div>
+                                        <p>O'rtacha yoqilgi hajmi</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="bottom-info-tab tab-content" id="secondTab">
+                            <ul>
+                                <li>
+                                    <h5 class="d-inline">249 Ot Kuchi</h5>
+                                    <div>
+                                        <p>Maksimal quvvat</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5 class="d-inline">8,4 sekund</h5>
+                                    <div>
+                                        <p>100 km/soatgacha tezlashish</p>
+                                    </div>
+                                </li>
+                                <li>
+                                    <h5 class="d-inline">11,1 L</h5>
+                                    <div>
+                                        <p>O'rtacha yoqilgi hajmi</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6 second_section">
+                    <div class="central-image">
+                        <img src="image/StariaPremium.png" alt="">
+                    </div>
+                    <div class="bottom-controls">
+                        <!-- bu yerdagi button data-bs-targetga qoyasiz django da s{{object.id}} qilsez boladi
+                            js da shunaqa yozganman
+                        -->
+                        <button class="btn-tab-opener" data-bs-target="firstTab" class="active">2.2 CRDi 8AT</button>
+                        <button class="btn-tab-opener" data-bs-target="secondTab">2.2 CRDi 8AT HTRAC</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="htrac d-flex align-items-center justify-content-center flex-direction-column mt-5 mb-5 pt-5 pb-5">
+            <img src="image/htrac.jpg" alt="">
+            <div class="container text-center">
+                <h1 class="font-sans font-sans-bold mt-5 mb-5">
+                    HTRAC to'liq g'ildirakli boshqaruv tizimi.
+                </h1>
+                <h4>Ob-havo yana yomonlashyaptimi? HTRAC to'liq g'ildirakli haydovchi tizimi sizning rejalaringizni buzishiga yo'l qo'ymaydi. Innovatsion elektronika tezlik va yo'l sharoitlarini real vaqtda kuzatib boradi. Qabul qilingan ma'lumotlarga asoslanib, HTRAC to'rt g'ildirak o'rtasida momentni avtomatik ravishda taqsimlaydi va kerak bo'lganda g'ildiraklarning har birini sekinlashtiradi va shu bilan qiyin ob-havo sharoitida ishonchli tortish va yo'lni ushlab turishni ta'minlaydi. </h4>
+            </div>
+        </div>
+
     </div>
+
+    <div id="safety" class="main">
+        <div class="main_tag">
+            #Xavfsizlik
+        </div>
+        <div class="main_title">
+            <h1 class="font-sans font-sans-bold">Yordam beradigan texnologiyalar</h1>
+        </div>
+        <div class="main_banner" style="background-image: url('image/safety_banner.jpg')"></div>
+    </div>
+    <div class="slider pt-5 pb-5 mt-5 mb-5 container">
+        <div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img class="img-fluid" src="image/safety_image_!.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-slider-safety swiper">
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center position-relative container">
+                                    <a href="#" class="mt-5 text-decoration-none text-light position-relative">
+                                        <img src="image/slider_1_1.jpg" style="max-height: 400px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-content mt-3 d-flex align-items-center justify-content-center">
+                                    <p>Hyundai Proyeksiya turidagi LED faralar xavfsizlik</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center position-relative container">
+                                    <a href="#" class="mt-5 text-decoration-none text-light position-relative">
+                                        <img src="image/slider_1_1.jpg" style="max-height: 400px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-content mt-3 d-flex align-items-center justify-content-center">
+                                    <p>Hyundai Proyeksiya turidagi LED faralar</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-character mt-5 mb-5">
+        <div class="container">
+            <div class="main-character-title mb-5 ml-3">
+                <h1 class="font-sans font-sans-bold">Hyundai Smart Sense™</h1>
+            </div>
+            <div class="row">
+
+                <div data-bs-target="first" class="col-12 mt-5 safety-image">
+                    <img src="image/safety_banner_1.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="first" class="col-md-5 mt-3 safety-image">
+                    <h3>Old to'siqlarni tormozlash yordamchisi (FCA)</h3>
+                    <p>chorrahalarda to'qnashuvning oldini olish bilan (FCA-JT)</p>
+                </div>
+                <!-- second -->
+                <div data-bs-target="second" class="col-12 mt-5 safety-image d-none">
+                    <img src="image/sb2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="second" class="col-md-5 mt-3 safety-image d-none">
+                    <h3>Yo'lovchi o'rindiqlarini boshqarish bloki</h3>
+                </div>
+                <!-- third -->
+                <div data-bs-target="third" class="col-12 mt-5 safety-image d-none">
+                    <img src="image/slider_5_3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="third" class="col-md-5 mt-3 safety-image d-none">
+                    <h3>Xavfsiz chiqish tizimi (SEA)</h3>
+                </div>
+                <!-- fourth -->
+                <div data-bs-target="fourth" class="col-12 mt-5 safety-image d-none">
+                    <img src="image/sb4.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="fourth" class="col-md-5 mt-3 safety-image d-none">
+                    <h3>Moslashuvchan kruiz nazorati (SCC)</h3>
+                </div>
+                
+
+                <div class="col-md-2"></div>
+                
+                <div class="col-md-5 mt-3">
+                    <div class="image-category-design">
+                        
+                        <div class="image-category d-inline-block is-clickable image-changer safety-image-changer">
+                            <img data-bs-target="first" src="image/sb1_preview.jpg" alt="">
+                            <div class="divider-safety divider-active"></div>
+                        </div>
+                        <div class="image-category d-inline-block is-clickable image-changer safety-image-changer">
+                            <img data-bs-target="second" src="image/sb2_preview.jpg" alt="">
+                            <div class="divider-safety"></div>
+                        </div>
+                        <div class="image-category d-inline-block is-clickable image-changer safety-image-changer">
+                            <img data-bs-target="third" src="image/sb3_preview.jpg" alt="">
+                            <div class="divider-safety"></div>
+                        </div>
+                        <div class="image-category d-inline-block is-clickable image-changer safety-image-changer">
+                            <img data-bs-target="fourth" src="image/sb4_preview.jpg" alt="">
+                            <div class="divider-safety"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <img src="image/safety_image_1.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Ko'r nuqta to'qnashuvidan qochish (BCA)</h3>
+                        <p>Mashinaning orqa qismiga o'rnatilgan radarlar yordamida u "ko'r" zonalardagi vaziyatni kuzatib boradi. Bu haydovchiga tirbandlikda manevr qilishda favqulodda vaziyatlardan qochishga yordam beradi.</p>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-md-6 mt-5">
+                    <img src="image/safety_image_2.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Orqa tomonda to'qnashuvning oldini olish tizimi (RCCA)</h3>
+                        <p>Orqaga harakatlanayotganda avtomobil lateral yo'nalishda yaqinlashganda sizni ogohlantiradi. Agar kerak bo'lsa, favqulodda tormozlash faollashtiriladi.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- comfort -->
+
+    <div id="comfort" class="main">
+        <div class="main_tag">
+            #Qulaylik
+        </div>
+        <div class="main_title">
+            <h1 class="font-sans font-sans-bold">Eng zo'r qulaylik</h1>
+        </div>
+        <div class="main_banner" style="background-image: url('image/comfort_banner.jpg')"></div>
+    </div>
+    <div class="slider pt-5 pb-5 mt-5 mb-5 container">
+        
+        <div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="image">
+                        <img class="img-fluid" src="image/cms1.jpg" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="detail-slider-comfort swiper">
+                        
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center position-relative container">
+                                    <a href="#" class="mt-5 text-decoration-none text-light position-relative">
+                                        <img src="image/cms2.jpg" style="max-height: 400px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-content mt-3 d-flex align-items-center justify-content-center">
+                                    <p>Hyundai Proyeksiya turidagi LED faralar xavfsizlik</p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="d-flex align-items-center justify-content-center position-relative container">
+                                    <a href="#" class="mt-5 text-decoration-none text-light position-relative">
+                                        <img src="image/slider_1_1.jpg" style="max-height: 400px" width="100%" alt="">
+                                    </a>
+                                </div>
+                                <div class="text-content mt-3 d-flex align-items-center justify-content-center">
+                                    <p>Hyundai Proyeksiya turidagi LED faralar</p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+
+    <div class="main-character mt-5 mb-5">
+        <div class="container">
+            <div class="main-character-title mb-5 ml-3">
+                <h1 class="font-sans font-sans-bold">Texnologiya.</h1>
+            </div>
+            <div class="row">
+
+                <div class="col-md-4">
+                    <img src="image/cms3.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Old va ikkinchi qatorda shamollatiladigan o'rindiqlar</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-md-6">
+                    <img src="image/cms4.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Ikkinchi qatorda isitiladigan o'rindiqlar</h3>
+                    </div>
+                </div>
+
+                <div data-bs-target="ten1" class="col-12 mt-5 comfort-image">
+                    <img src="image/slider_5_1.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="ten1" class="col-md-5 mt-3 comfort-image">
+                    <h3>10,25 dyuymli raqamli asboblar klasteri</h3>
+                </div>
+                <!-- second -->
+                <div data-bs-target="ten2" class="col-12 mt-5 comfort-image d-none">
+                    <img src="image/slider_5_2.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="ten2" class="col-md-5 mt-3 comfort-image d-none">
+                    <h3>Yo'lovchi o'rindiqlarini boshqarish bloki</h3>
+                </div>
+                <!-- third -->
+                <div data-bs-target="ten3" class="col-12 mt-5 comfort-image d-none">
+                    <img src="image/slider_5_3.jpg" class="img-fluid" alt="">
+                </div>
+
+                <div data-bs-target="ten3" class="col-md-5 mt-3 comfort-image d-none">
+                    <h3>Barcha o'rindiqlar uchun USB rozetkalari</h3>
+                </div>
+                
+
+                <div class="col-md-3"></div>
+                
+                <div class="col-md-4 mt-3">
+                    <div class="image-category-design">
+                        
+                        <div class="image-category d-inline-block is-clickable image-changer comfort-image-changer">
+                            <img data-bs-target="ten1" src="image/slider_5_1_preview.jpg" alt="">
+                            <div class="divider-comfort divider-active"></div>
+                        </div>
+                        <div class="image-category d-inline-block is-clickable image-changer comfort-image-changer">
+                            <img data-bs-target="ten2" src="image/slider_5_2_preview.jpg" alt="">
+                            <div class="divider-comfort"></div>
+                        </div>
+                        <div class="image-category d-inline-block is-clickable image-changer comfort-image-changer">
+                            <img data-bs-target="ten3" src="image/slider_5_3_preview.jpg" alt="">
+                            <div class="divider-comfort"></div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-md-4 mt-5">
+                    <img src="image/cms5.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>Elektron avtomatik transmissiya selektori (tugmalar bilan almashtirish)</h3>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+                <div class="col-md-6 mt-5">
+                    <img src="image/cms6.jpg" alt="" class="img-fluid">
+                    <div class="text-content mt-3">
+                        <h3>BOSE Premium audio tizimi* (Premium opsiya**)</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
     
     <footer class="footer" role="contentinfo">
         <div class="footer__top container">

@@ -1,3 +1,5 @@
+// +998 93 179 17 57 bu silarga tegishlimas
+
 let main_navbar = document.querySelector('.main-navbar');
 let carWrapper = document.querySelector('#carWrapper');
 let sliders = carWrapper.querySelectorAll('.car-slide-3d');

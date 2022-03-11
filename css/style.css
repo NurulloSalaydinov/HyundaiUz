@@ -1343,6 +1343,22 @@ body {
     margin-top: -150px;
 }
 
+.border-top-dark {
+    border-top: 1px solid #000;
+}
+
+.float-right-md {
+    float: right;
+}
+
+.last-element:last-child {
+    border-bottom: 1px solid #000;
+}
+
+.bg-info-secondary {
+    background: #f8f8f8;
+}
+
 @media (max-width: 768px) {
     .float-right {
         float: none;

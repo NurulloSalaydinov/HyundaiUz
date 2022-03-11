@@ -1,4 +1,5 @@
 let mobile_responsive_navbar = document.querySelector('.navbar-header-links');
+let inputs = document.querySelectorAll('input');
 
 function showroom_opener(e) {
     e.parentElement.querySelector('.showroom-models').classList.toggle('showroom-active');
@@ -39,3 +40,28 @@ function blur_input(e) {
     label = e.parentElement.querySelector('label');
     label.classList.remove('clicked-active-label');
 };
+
+inputs.forEach(e => {
+    e.addEventListener('keydown', (e) => {
+        if (e.target.value != '') {
+            label = e.target.offsetParent.querySelector('label');
+            label.classList.add('full-active-label'); 
+        }
+        else {
+            label = e.target.offsetParent.querySelector('label');
+            label.classList.remove('full-active-label'); 
+        }
+        if (e.keyCode == 8) {
+            if (e.target.value != '') {
+                label = e.target.offsetParent.querySelector('label');
+                label.classList.add('full-active-label'); 
+            }
+            else {
+                label = e.target.offsetParent.querySelector('label');
+                label.classList.remove('full-active-label'); 
+            }
+            // console.log('backspace');
+            // console.log(e.target.value)
+        }
+    })
+});

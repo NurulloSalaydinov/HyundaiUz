@@ -38,3 +38,14 @@ document.querySelector('#phone').addEventListener('blur', (e) => {
     label = e.target.offsetParent.querySelector('label');
     label.classList.remove('clicked-active-label'); 
 });
+
+document.querySelector('#phone').addEventListener('keydown', (e) => {
+    if (e.target.value != '') {
+        label = e.target.offsetParent.querySelector('label');
+        label.classList.add('full-active-label'); 
+    }
+    else {
+        label = e.target.offsetParent.querySelector('label');
+        label.classList.remove('full-active-label'); 
+    }
+});

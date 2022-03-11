@@ -35,6 +35,10 @@ main .register-card {
     border: 1px solid #000;
 }
 
+.register-card form .input-form input:focus {
+    border: 1px solid #000;
+}
+
 .register-card form .input_label {
     top: 25px;
     left: 10px;
@@ -54,6 +58,15 @@ main .register-card {
 }
 
 .register-card form .clicked-active-label {
+    top: 13px;
+    left: 10px;
+    z-index: 111;
+    font-size: 12px;
+    background: #fff;
+    position: absolute;
+}
+
+.register-card form .full-active-label {
     top: 13px;
     left: 10px;
     z-index: 111;

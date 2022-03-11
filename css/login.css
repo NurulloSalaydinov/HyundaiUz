@@ -33,6 +33,9 @@ main .login-card {
 .login-card form .input-form #phone:hover {
     border: 1px solid #000;
 }
+.login-card form .input-form #phone:focus {
+    border: 1px solid #000;
+}
 
 .login-card form label {
     top: 25px;
@@ -53,6 +56,15 @@ main .login-card {
 }
 
 .login-card form .clicked-active-label {
+    top: 13px;
+    left: 10px;
+    z-index: 111;
+    font-size: 12px;
+    background: #fff;
+    position: absolute;
+}
+
+.login-card form .full-active-label {
     top: 13px;
     left: 10px;
     z-index: 111;

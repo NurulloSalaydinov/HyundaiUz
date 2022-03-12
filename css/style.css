@@ -168,7 +168,7 @@ body {
 }
 
 .navbar-header-links ul li .showroom-active {
-    height: 100%;
+    height: 90%;
     transition: all 0.5s;
 }
 

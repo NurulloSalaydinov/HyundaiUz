@@ -1,0 +1,42 @@
+main {
+    width: 100%;
+    height: auto;
+    padding: 40px 0;
+    background: #f8f8f8;
+}
+
+.main_features {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px 30px 40px;
+    background: var(--color-hyundai-blue);
+}
+
+.main_features svg {
+    width: 3rem;
+    height: 3rem;
+}
+
+.main_feature_icon_check {
+    padding: 10px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+}
+
+.car_checkbox a {
+    color: #000;
+}
+
+.filter-side {
+    padding: 30px 25px;
+    background: #fff;
+}
+
+.car_checkbox a:hover {color: var(--color-hyundai-blue)}
+
+input {
+    cursor: pointer;
+}

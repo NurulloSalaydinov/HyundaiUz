@@ -526,6 +526,59 @@
 
                                     </div>
 
+                                    <div class="color-filter">
+
+                                        <div class="tab-opener">
+                                            <span
+                                            class="font-sans 
+                                            font-sans-bold
+                                            ext_tab is-clickable
+                                            active-tab"
+                                            onclick="
+                                                this.classList.add('active-tab');
+                                                this.parentElement.querySelector('.int_tab').classList.remove('active-tab');
+                                                this.parentElement.parentElement.querySelector('.exterior').classList.remove('d-none');
+                                                this.parentElement.parentElement.querySelector('.interior').classList.add('d-none');
+                                            "
+                                            >
+                                                Tashqi korinish
+                                            </span>
+                                            <span 
+                                            class="font-sans 
+                                            font-sans-bold 
+                                            is-clickable int_tab"
+                                            onclick="
+                                                this.classList.add('active-tab');
+                                                this.parentElement.querySelector('.ext_tab').classList.remove('active-tab');
+                                                this.parentElement.parentElement.querySelector('.exterior').classList.add('d-none');
+                                                this.parentElement.parentElement.querySelector('.interior').classList.remove('d-none');
+                                            "
+                                            >
+                                                Ichki korinish
+                                            </span>
+                                        </div>
+
+                                        <div class="exterior mt-3">
+                                            <div class="color-box">
+                                                <label for="ext_1" data-title="Oq">
+                                                    <div class="box-item" style="background: #fff;"></div>
+                                                    <input type="checkbox" id="ext_1">
+                                                </label>
+                                            </div>
+
+                                            <div class="color-box">
+                                                <label for="ext_2" data-title="Qora">
+                                                    <div class="box-item" style="background: black;"></div>
+                                                    <input type="checkbox" id="ext_2">
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="interior mt-3">
+                                            Bu Interior
+                                        </div>
+
+                                    </div>
+
                                 </div>
                             </div>
                         </div>

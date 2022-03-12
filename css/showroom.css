@@ -48,3 +48,123 @@ i {
 .icon-active {
     transform: rotate(180deg);
 }
+
+.tab-opener span {
+    color: #999;
+}
+
+.tab-opener span:last-child {
+    margin-left: 10px;
+}
+
+.tab-opener .active-tab {
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .tab-opener span:last-child {
+        margin-left: 0;
+    }   
+}
+
+.color-box {
+    position: relative;
+    display: inline-block;
+}
+
+.color-box .box-item {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    border-radius: 50%;
+    margin: 0 5px;
+    box-shadow: 0 0 5px 0px rgba(0, 0, 0, 0.5);
+}
+
+.color-box input {
+    width: 30px;
+    height: 30px;
+    appearance: none;
+    position: absolute;
+}
+
+.color-box label {
+    position: relative;
+}
+
+.color-box label[data-title]:hover:before {
+    content: attr(data-title);
+    position: absolute;
+    left: -2.5em;
+    bottom: 100%;
+    margin-bottom: 1.3em;
+    padding: .75em .83333em;
+    background: #fff;
+    min-width: 6.08333em;
+    font-size: .75em;
+    line-height: 1.25;
+    text-align: center;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, .16)
+}
+
+.color-box label[data-title]:hover:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto .5em;
+    bottom: 100%;
+    width: 0;
+    height: 0;
+    border-left: .4em solid transparent;
+    border-right: .4em solid transparent;
+    border-top: .5em solid #fff
+}
+
+/* .color-box label .alert-text {
+    top: -50px;
+    left:0;right:0;margin:0 auto .5em;bottom:100%;
+    width: auto;
+    display: none;
+    text-align: center;
+    padding: 5px 25px;
+    background: #fff;
+    position: absolute;
+    margin-left: calc(100% - 50px);
+    box-shadow: 0 0 15px 3px rgba(0, 0, 0, 0.5);
+} */
+
+/* .color-box label .alert-text::after {
+    content: "";
+    width: 0;
+    height: 0;
+    bottom: -10px;
+    left: 32%;
+    position: absolute;
+    border-style: solid;
+    border-width: 10px 10px 0 10px;
+    border-color: #fff transparent transparent transparent;
+}
+
+.color-box label:hover .alert-text {
+    display: block;
+} */
+
+.color-box input::after {
+    top: -35px;
+    right: -5px;
+    color: #fff;
+    display: none;
+    font-size: 12px;
+    padding: 0px 4px;
+    border-radius: 50%;
+    content: "\f00c";
+    font-weight: 900;
+    position: absolute;
+    font-family: "Font Awesome 5 Free"; 
+    background: var(--color-hyundai-light-blue);
+}
+
+.color-box input:checked::after {
+    display: block;
+}

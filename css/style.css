@@ -1359,6 +1359,10 @@ body {
     background: #f8f8f8;
 }
 
+.flex-wrap-wrap {
+    flex-wrap: wrap;
+}
+
 @media (max-width: 768px) {
     .float-right {
         float: none;

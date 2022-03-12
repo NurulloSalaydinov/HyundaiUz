@@ -40,3 +40,11 @@ main {
 input {
     cursor: pointer;
 }
+
+i {
+    transition: all 0.4s;
+}
+
+.icon-active {
+    transform: rotate(180deg);
+}

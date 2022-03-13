@@ -35,7 +35,9 @@ main {
     background: #fff;
 }
 
-.car_checkbox a:hover {color: var(--color-hyundai-blue)}
+.car_checkbox a:hover {
+    color: var(--color-hyundai-blue)
+}
 
 input {
     cursor: pointer;
@@ -64,7 +66,7 @@ i {
 @media (max-width: 768px) {
     .tab-opener span:last-child {
         margin-left: 0;
-    }   
+    }
 }
 
 .color-box {
@@ -95,7 +97,7 @@ i {
 .color-box label[data-title]:hover:before {
     content: attr(data-title);
     position: absolute;
-    left: -2.5em;
+    left: calc(25px - 100%);
     bottom: 100%;
     margin-bottom: 1.3em;
     padding: .75em .83333em;
@@ -161,10 +163,92 @@ i {
     content: "\f00c";
     font-weight: 900;
     position: absolute;
-    font-family: "Font Awesome 5 Free"; 
+    font-family: "Font Awesome 5 Free";
     background: var(--color-hyundai-light-blue);
 }
 
 .color-box input:checked::after {
     display: block;
+}
+
+.options-footer .options-footer-container {
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    max-height: 300px;
+}
+
+.options-footer-container .custom-checkbox-form {
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    flex-direction: column;
+    letter-spacing: .75px;
+}
+
+.options-footer-container .custom-checkbox-form label {
+    margin: 5px 0;
+}
+
+.btn-disabled-filterer {
+    color: #999;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.4s;
+    border: 1px solid #000;
+    padding: 12px 30px;
+}
+
+.btn-disabled-filterer:hover {
+    color: var(--color-hyundai-light-blue);
+    border: 1px solid var(--color-hyundai-light-blue);
+}
+
+.is-48-48-box-radius {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.bottom-btn {
+    bottom: 10px;
+    position: absolute;
+}
+
+.image-content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+}
+
+.image-content[data-title]::after {
+    top: 0;
+    left: 0;
+    color: #fff;
+    padding: 3px 12px;
+    position: absolute;
+    content: attr(data-title);
+    background: var(--color-hyundai-blue);
+}
+
+.ml-txt-1 {
+    margin-left: 5px;
+}
+
+@media (max-width: 768px) {
+    .image-content[data-title]::after {
+        font-size: small;
+        padding: 2px 6px;
+    }
+    .chosen-car-side {
+        padding: 0;
+        margin: 16px 0;
+    }
+    .bottom-btn {
+        position: static;
+    }
 }

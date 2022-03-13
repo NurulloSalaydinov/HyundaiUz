@@ -1259,6 +1259,10 @@ body {
     color: #003B70
 }
 
+.bg-hyundai-color {
+    background-color: #003B70
+}
+
 .is-clickable {
     cursor: pointer;
 }
@@ -1331,6 +1335,10 @@ body {
     font-size: 16px;
 }
 
+.is-x-small {
+    font-size: small;
+}
+
 .flex-direction-column {
     flex-direction: column !important;
 }
@@ -1367,4 +1375,41 @@ body {
     .float-right {
         float: none;
     }
+}
+
+.btn-animate {
+    position: relative;
+}
+
+.btn-animate::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: #002c5f;
+    transition: all 0.5s;
+    transform-origin: 0 0;
+    transform: scaleX(0)
+}
+
+.btn-animate {
+    z-index: 1;
+}
+
+.btn-animate:hover::before {
+    transform: scaleX(1);
+}
+
+@media (max-width: 467px) {
+
+    .btn-is-small-sm {
+        font-size: x-small;
+        padding: 6px 2px !important;
+    }
+
 }

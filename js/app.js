@@ -1,5 +1,3 @@
-AOS.init();
-
 let navbar = document.getElementById('navbar');
 let mobile_responsive_navbar = document.querySelector('.navbar-header-links');
 let showroom_models = document.querySelectorAll('.showroom-models');

@@ -1,7 +1,5 @@
-@import url('../fonts/stylesheet.css');
-
 body {
-    background: #eee !important;
+  background: #F6F3F2 !important;
 }
 
 #gallery .title{
@@ -67,6 +65,12 @@ body {
   .mySwiper2 .swiper-wrapper .swiper-slide img {
       width: 100%;
       height: 600px;
+  }
+
+  .mySwiper2 .swiper-pagination {
+      color: #fff;
+      right: 0;
+      /* left: 0; */
   }
 
   .mySwiper {

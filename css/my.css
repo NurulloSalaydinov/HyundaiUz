@@ -1,0 +1,93 @@
+@import url('../fonts/stylesheet.css');
+
+body {
+    background: #eee !important;
+}
+
+#gallery .title{
+    font-size: 24px;
+    font-family: "HyundaiSansHead", sans-serif;
+    font-weight: 500;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  body {
+    background: #000;
+    color: #000;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
+  .mySwiper2 {
+    height: auto;
+    width: 100%;
+  }
+
+  .mySwiper2 .swiper-wrapper .swiper-slide img {
+      width: 100%;
+      height: 600px;
+  }
+
+  .mySwiper {
+    height: 50%;
+    padding: 10px 0;
+    box-sizing: border-box;
+  }
+
+  .mySwiper .swiper-slide {
+    width: 25%;
+    height: 100%;
+    opacity: 0.8;
+  }
+
+  .mySwiper .swiper-slide-thumb-active {
+    opacity: 1;
+  }
+
+  .swiper-slide img {
+    display: inline-block;
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+  }

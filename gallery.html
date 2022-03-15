@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nurullo Salaydinov">
+    <title>Hyundai Uz</title>
+    <!-- font awesome -->
+    <!-- <link rel="stylesheet" href="css/font/css/all.css"> -->
+    <script src="https://kit.fontawesome.com/55f20efebd.js" crossorigin="anonymous"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" href="image/favicon.svg" type="image/x-icon">
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- css stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- css swiper -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- aos animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <!-- sidebar -->
+        <div class="sidebar-top">
+            <div class="container">
+                <div class="number-with-email">
+                    <p class="hyundai-color text-decoration-none pt-2">
+                        <a href="tel:+998979890919" class="hyundai-color text-decoration-none">
+                            97-989-09-19
+                        </a>
+                        <i class="fa-solid fa-chevron-circle-down is-clickable sidebar-dropdown-opener"
+                            onclick="this.parentElement.parentElement.querySelector('.dropdown-for-number').classList.add('dropdown-sidebar-active')"></i>
+                    </p>
+                    <div class="dropdown-for-number text-light">
+                        <span>Mijozlarni qo'llab-quvvatlash <i class="fa-solid fa-circle-chevron-up is-clickable"
+                                onclick="this.parentElement.parentElement.classList.remove('dropdown-sidebar-active')"></i></span>
+                        <p class="h3 mt-3">
+                            <a href="tel:+998979890919" class="text-light text-decoration-none">97-989-09-19</a>
+                        </p>
+                        <a href="mailto:example@example.com" class="text-light text-decoration-none">
+                            <i class="fa-solid fa-envelope"></i> Email
+                        </a>
+                    </div>
+                </div>
+                <div class="right-extra-links">
+                    <div class="link-box">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-pen-to-square"></i>
+                            Xizmat uchun ro'yxatdan o'tish
+                        </a>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-map"></i>
+                            Diler qidirish
+                        </a>
+                    </div>
+                    <div class="link-box">
+                        <a href="#" class="text-dark text-decoration-none">
+                            <i class="fa-solid fa-car"></i>
+                            Haydov Testi
+                        </a>
+                    </div>
+                    <div class="link-box user-cabinet">
+                        <a href="#" class="text-light text-decoration-none">
+                            <i class="fa-solid fa-circle-user"></i>
+                            Shaxsiy kabinet
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- navbar -->
+        <nav class="navbar-header" id="navbar">
+            <div class="container">
+                <a href="/" class="logo-header-navbar">
+                    <img src="image/hyundai-logo.png" alt="">
+                </a>
+                <div class="toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="navbar-header-links">
+                    <ul>
+                        <li class="has-dropdown">
+                            <p class="font-sans" onclick="showroom_opener(this)">
+                                Tarkib <i class="fa-solid fa-circle-chevron-down animation-icon"></i>
+                            </p>
+                            <div class="showroom-models">
+                                <a href="#" class="banner-showroom">
+                                    <div class="banner">
+                                        <div class="container">
+                                            <h2><b>Onlayn Harid</b></h2>
+                                            <p class="text-light">Yangi Hyundai avtomobilingizni tanlang!</p>
+                                            <br>
+                                            <button class="btn-bg-hyundai">Sotib olish</button>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="container mt-3">
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Shahar <i class="fa-solid fa-times"
+                                                    onclick="showroom_opener(this.parentElement.parentElement.parentElement.parentElement.parentElement)"></i>
+                                            </h3>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Solaris</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Elantra</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Sonata</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                    <br>
+                                    <div class="row">
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Shahar</h3>
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Solaris</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Elantra</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                        <div class="col-12 col-sm-12 col-md-4 col-lg-3">
+                                            <h3 class="title">Sonata</h3>
+                                            <p>1 005 000 ₽ dan / oyiga 6 000 ₽ dan</p>
+                                            <img src="image/hyundai_solaris.png" width="100%" alt="">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <hr>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Online Harid</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Konfigurator</a>
+                        </li>
+                        <li class="header-link">
+                            <a href="#">Mahsus takliflar</a>
+                        </li>
+                        <li class="mobile-visible">
+                            <div class="link-box">
+                                <a href="#" class="text-dark text-decoration-none">
+                                    <i class="fa-solid fa-pen-to-square"></i>
+                                    Xizmat uchun ro'yxatdan o'tish
+                                </a>
+                            </div>
+                        </li>
+                        <li class="mobile-visible">
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="fa-solid fa-map"></i>
+                                Diler qidirish
+                            </a>
+                        </li>
+                        <li class="mobile-visible">
+                            <a href="#" class="text-dark text-decoration-none">
+                                <i class="fa-solid fa-car"></i>
+                                Haydov Testi
+                            </a>
+                        </li>
+                        <li class="mobile-visible">
+                            <a href="#" class="text-decoration-none">
+                                <i class="fa-solid fa-circle-user"></i>
+                                Shaxsiy kabinet
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <!-- gallery -->
+    
+    <!-- it just easy to find -->
+    <link rel="stylesheet" href="css/my.css">
+    <!-- sorry for that  😢😭 -->
+    <div class="container mt-5">
+
+        <div
+          style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff"
+          class="swiper mySwiper2"
+        >
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+        </div>
+        <hr>
+        <div thumbsSlider="" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-5.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-6.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-7.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-8.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-9.jpg" />
+            </div>
+            <div class="swiper-slide">
+              <img src="https://swiperjs.com/demos/images/nature-10.jpg" />
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 10,
+        slidesPerView: 4,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 10,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
+      });
+    </script>
+
+</body>
+</html>
